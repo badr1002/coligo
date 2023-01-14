@@ -1,38 +1,35 @@
 {
-  "name": "coligo",
-  "version": "0.1.0",
+  "name": "authentication",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node ./bin/www"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "async": "^3.2.4",
+    "bcryptjs": "2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "1.4.4",
+    "cors": "2.8.5",
+    "debug": "2.6.9",
+    "dotenv": "16.0.0",
+    "express": "4.16.1",
+    "express-session": "^1.17.2",
+    "express-winston": "^4.2.0",
+    "helmet": "^6.0.0",
+    "http-errors": "1.6.3",
+    "jade": "1.9.2",
+    "jsonwebtoken": "8.5.1",
+    "moment": "2.29.4",
+    "mongoose": "6.2.6",
+    "morgan": "1.9.1",
+    "passport": "0.6.0",
+    "passport-bearer-strategy": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "stompit": "^1.0.0",
+    "validator": "13.7.0",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "winston-elasticsearch": "^0.17.1"
   }
 }

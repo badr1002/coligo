@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/badr/Documents/test/coligo/logs/.06e1b7eb3a7aa0d93799e7a4cf034ec21130645d-audit.json",
+    "files": [
+        {
+            "date": 1673652367590,
+            "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-01",
+            "hash": "04d1af98b00e95ff207a75fcb0dc32c444bc00c0d9ec4258f4eec772f31ad3e0"
+        },
+        {
+            "date": 1673664131283,
+            "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-04",
+            "hash": "78ff7a5c3e6f51f5996500fa8e1fcc5ea024673d5932188012ceb4c4572604c8"
+        },
+        {
+            "date": 1673665233301,
+            "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-05",
+            "hash": "b335e4b8b1b7b66cf7bee19dd99b32d456760365ea76b8de8cadbe56986b5cce"
+        },
+        {
+            "date": 1673691974983,
+            "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-12",
+            "hash": "ec4bf5e8bf6a6d36aa4b6091d66652c3f206f1f418a8973e430b6f68b4423dc7"
+        },
+        {
+            "date": 1673694135917,
+            "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-13",
+            "hash": "5ac2a57087d9d16f6737af6ec00b8507a1cae5ec4922944c9dcbc2871009096f"
+        },
+        {
+            "date": 1673703419551,
+            "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-15",
+            "hash": "a1adba6c69ac0e67a83a6ce0861b30e166a25c729c04c212aca35d3ef5a6a420"
+        }
+    ],
+    "hashType": "sha256"
+}
