@@ -22,7 +22,7 @@ const SidebarHomePage = () => {
                         </Col>
                         <Col lg='12' className='mt-5'>
                             <h3> <FontAwesomeIcon icon={faCalendarCheck} size='1x' className='icons' /> Assignment</h3>
-                            <Link className='btn btn-outline-success'>Solve Assignment</Link>
+                            <Link className='btn btn-outline-success' to={'/Schedule'}>Solve Assignment</Link>
                         </Col>
                    </Row>
                 </Col>
