@@ -5,8 +5,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import { faBell, faEnvelope, faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Navebar.scss';
+import { Dropdown } from 'react-bootstrap';
+import DropdownItem from 'react-bootstrap/esm/DropdownItem';
+import { Link } from 'react-router-dom';
 
-function NavbarLayout({ onCapsuleSidebar, LogOut ,currentUser}) {
+function NavbarLayout({ onCapsuleSidebar, LogOut, currentUser }) {
     return (
         <>
             <Navbar bg="light" expand="lg">
@@ -34,7 +37,17 @@ function NavbarLayout({ onCapsuleSidebar, LogOut ,currentUser}) {
                     <span className='alertIcon'>0</span>
                     <FontAwesomeIcon icon={faEnvelope} size='2x' className='icons' />
                     <span className='alertIcon'>0</span>
-                    <FontAwesomeIcon icon={faUser} size='2x' className='icons' onClick={() => LogOut()} />
+                    <Dropdown>
+                        <Dropdown.Toggle variant="Info" id="dropdown-basic">
+                            <FontAwesomeIcon icon={faUser} size='2x' className='icons' />
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1"><Link onClick={() => LogOut()}>Logout</Link></Dropdown.Item>
+
+                        </Dropdown.Menu>
+                    </Dropdown>
+
                 </Container>
             </Navbar>
         </>

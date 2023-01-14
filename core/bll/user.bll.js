@@ -15,8 +15,8 @@ module.exports = {
         if (!user) return callback("#1.1.1");
         // set lang
         userDal.changeLang(user, lang, (err, _user) => {
-            if (err) return callback(err)
-            else {
+            if (err) return callback(err);
+            else {            
                 delete _user.password;
                 delete _user.tokens;
                 userDal.generateToken(_user._id, (err, token) => {

@@ -47,7 +47,7 @@ class User {
             user.lastLogin = Date.now()
             user.lang = lang || 'ar'
             await user.save()
-            return callback(false, user)
+            return callback(false, user.toObject())
         } catch (err) {
             return callback(err)
         }

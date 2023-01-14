@@ -34,6 +34,11 @@
             "date": 1673703419551,
             "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-15",
             "hash": "a1adba6c69ac0e67a83a6ce0861b30e166a25c729c04c212aca35d3ef5a6a420"
+        },
+        {
+            "date": 1673704824818,
+            "name": "/home/badr/Documents/test/coligo/logs/authentication.log.2023-01-14-16",
+            "hash": "e4e33e8ad823513db59c32e9884781daa6f756622c65fab391efeb14d253053e"
         }
     ],
     "hashType": "sha256"

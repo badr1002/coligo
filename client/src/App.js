@@ -42,14 +42,14 @@ const App = () => {
     }
   }, [currentUser]);
 
-  // useEffect(() => {
-  //   if (!isAutheticated) {
-  //     if (["/login", "/register"].includes(location.pathname)) navigate(location.pathname);
-  //     else navigate('/login');
-  //   } else {
-  //     navigate('/');
-  //   }
-  // }, [navigate, isAutheticated]);
+  useEffect(() => {
+    if (!isAutheticated) {
+      if (["/login", "/register"].includes(location.pathname)) navigate(location.pathname);
+      else navigate('/login');
+    } else {
+      //navigate(location.pathname);
+    }
+  }, [navigate, isAutheticated]);
 
 
   return (

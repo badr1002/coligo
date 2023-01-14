@@ -18,6 +18,7 @@ app.use(helmet.hidePoweredBy({
     'Love and other drugs'
 }));
  
+
 const userRoutes = require('./routes/users.routes');
 const assignmentRoutes = require('./routes/assignment.routes');
  
@@ -53,15 +54,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-// app.use("/", express.static(path.resolve(__dirname, "client/dist")));
+app.use("/", express.static(path.resolve(__dirname, "client/build")));
 app.use('/api/auth', userRoutes);
 app.use('/api/words', assignmentRoutes);
 
+app.get('/*', function (req, res) {
+  res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
+})
 app.use(winstonErrorInstance);
 
-// app.get('/*', function (req, res) {
-//   res.sendFile(path.resolve(__dirname, 'client/dist', 'index.html'));
-// })
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
